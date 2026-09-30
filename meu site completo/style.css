@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #faf6f7;
+    color: #333;
+}
+
+/* --- BARRA FIXA (NAVBAR) --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+.brand-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #83274e;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-fale-conosco {
+    background-color: #72d5ff;
+    color: #0d5875;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.btn-perfil {
+    background-color: #83274e;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* --- CONTEÚDO PRINCIPAL (HERO) --- */
+.hero-container {
+    margin-top: 70px; /* Compensação da barra fixa */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+}
+
+/* Esquerda */
+.hero-text {
+    flex: 1;
+}
+
+.badge-tag {
+    display: inline-block;
+    background-color: #f5e8ed;
+    color: #83274e;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 span {
+    color: #83274e;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 480px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background-color: #72d5ff;
+    color: #0d5875;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #83274e;
+    border: 1px solid #e2d1d7;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Cards Pequenos de Destaque na Esquerda */
+.features-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.feature-card {
+    background: #f3e8eb;
+    padding: 10px 14px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.75rem;
+}
+
+.feature-card strong {
+    display: block;
+    color: #333;
+}
+
+.feature-card small {
+    color: #777;
+}
+
+/* Direita (Card de Produto) */
+.hero-card-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 450px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.tag-sub {
+    color: #888;
+}
+
+.tag-highlight {
+    background: #fbe3eb;
+    color: #83274e;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.floating-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #83274e;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fcf8f9;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.sub-label {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.sub-text {
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.badge-exclusivo {
+    color: #83274e;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
